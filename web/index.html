@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter Web</title>
+  <script>
+    window.requestFullscreen = function() {
+      if (document.documentElement.requestFullscreen) {
+        return document.documentElement.requestFullscreen();
+      }
+      return Promise.resolve();
+    };
+    window.exitFullscreen = function() {
+      if (document.exitFullscreen) {
+        return document.exitFullscreen();
+      }
+      return Promise.resolve();
+    };
+  </script>
+</head>
+<body>
+<script src="main.dart.js" type="application/javascript" defer></script>
+</body>
+</html>
